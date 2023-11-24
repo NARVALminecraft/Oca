@@ -9,6 +9,8 @@ srand(time(NULL))
 dado1=rand() % 6+1
 printf("Has sacado un %d\n", dado1);
 
+//si la casilla es >=60 se usa solo un dado
+
 dado2=rand() % 6+1
 printf("Has sacado un %d\n", dado2);
 
