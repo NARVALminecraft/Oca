@@ -1,0 +1,12 @@
+int dados(){
+  
+int dado1, dado2;
+  
+printf("Jugador %c es tu turno:");
+
+
+
+
+
+  
+}
