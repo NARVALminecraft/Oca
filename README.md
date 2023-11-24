@@ -28,9 +28,7 @@ Array de 64 casillas, sus casillas especiales son:
 
 Reglamento:
 
-    Inicio de la Partida: Si al tirar los dados la suma de ambos es 9, puede suceder:
-        Los dados son 5 y 4. Se salta a la casilla 53 (Dados)
-        Los dados son 3 y 6. Se salta a la casilla 26 (Dados)
+   
     Oca: Casillas 5, 9, 14, 18, 23, 27, 32, 36, 41, 45, 50, 54 y 59. Si se cae en una de estas casillas, se puede avanzar hasta la siguiente casilla en la que hay una oca y volver a tirar.
     Puente: Casilla 6 y 12. Si se cae en estas casillas se salta a la casilla 19 (la Posada) y se pierde un turno. En algunos tableros, solo figura como puente la casilla 6.
     Posada: Casilla 19. Si se cae en esta casilla se pierde un turno.
