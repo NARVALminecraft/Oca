@@ -41,3 +41,33 @@ Reglamento:
     Calavera: Casilla 58. Si se cae en esta casilla, hay que volver a la Casilla 1, vuelve a iniciar el Camino.
     A partir de la casilla 60: Se juega solo con 1 dado.
     Entrar al Jardín de la Oca: Es necesario sacar los puntos justos para entrar, en caso de exceso se retroceden tantas casillas como puntos sobrantes.
+
+
+Estados:
+
+    Los estados duran más que una llamada:
+    Posada/Puente: dado1, dado2=0 durante 1 turno
+
+    Pozo: dado1, dado2=0 hasta que el otro J caiga en esa casilla, entonces el J que caiga recibirá el estado Pozo
+
+    Carcel: dado1, dado2=0 hasta que el otro J caiga en esa casill
+
+    Casilla>60: dado2=0
+
+Acciones: 
+    Duran una sola llamada:
+    Oca: Se mueve a la siguiente oca y vuelve a tirar
+
+    Puente: se mueve a la casilla Posada
+
+    Laberinto: se mueve a la casilla 30
+
+    Dado 26: te mueves a la casilla 53 (el otro dado) y avanzas 5+3 casillas
+
+    Dado 53: te mueves a la casilla 26 (el otro dado) y avanzas 2+6 casillas
+
+    Calavera: te mueves a la casilla 0
+
+    Jardín de la oca: el jugador gana y se acaba la partida
+
+    
