@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stlib.h>
 #include <time.h>
+#include<stdbool.h>
 
 
 //modulo dado
@@ -8,16 +9,22 @@
 //modulo jugador 2
 //modulo comprobarcasilla
 
-int dados();
+int dados(int casilla);
 
 
 /*turno del jugador 1,realiza tirada, se calcula el valor nuevo de la casilla y se comprueba el tipo de casilla, en caso de 
 casillas especiales se volvera a calcular el nuevo valor de la casilla*/
-int jugador1(*casilla_jug1)
+
+int jugador1()
 {int valor_dado=0,casilla_anterior;
-valor_dado=dado();
-casilla_anterior=*casilla_jug1;
-*casilla_jug1=casilla_anterior+valor_dado;
+char estado;
+bool perdida_turno;
+
+printf("Turno para el jugador 1\n");
+valor_dado=dado(casilla_jug1);
+casilla_anterior=casilla_jug1;
+casilla_jug1=casilla_anterior+valor_dado;
+casilla_ju
 
 
 
@@ -27,19 +34,22 @@ casilla_anterior=*casilla_jug1;
 
 
 }
-int jugador2(*casilla_jug2);
-char comprobar_casilla(int casilla);
+int jugador2();
+int comprobar_casilla(int casilla);
 
 
 
 int main()
-{int casilla_jug1=0,casilla_jug2=0;
-int gana_jug1=0,gana_jug2=0;
+{int casilla_inicial_jug1=0,casilla_inicial_jug2=0;
+int casilla_final_jug1,casilla_final_jug2;
+
 char tipo_casilla[63]={};
 {
-  while(gana_jug1!=1&&gana_jug2!=1)
-  {gana_jug1=jugador1(&casilla_jug1);
-  gana_jug2=jugador2(&casilla_jug2);
+  while(casilla_inicial_jug1!=63&&casilla_inicial_jug2!=63)
+  {casilla_final_jug1=jugador1(casilla_inicial_jug1);
+  casilla_inicial_jug1=casilla_final_jug1;
+  casilla_final_jug2=jugador2(casilla_inicial_jug2);
+  casilla_inicial_jug2=casilla_final_jug2;
   }
 
 
