@@ -1,4 +1,4 @@
-rn int dados(){
+int dados(){
   
 int dado1, dado2;
   
