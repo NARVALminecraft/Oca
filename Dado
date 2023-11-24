@@ -4,7 +4,8 @@ int dado1, dado2;
   
 printf("Jugador %c es tu turno:");
 
-
+srand(time(NULL))
+dado1=rand() % 6+1
 
 
 
