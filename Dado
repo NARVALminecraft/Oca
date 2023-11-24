@@ -1,4 +1,4 @@
-int dados(){
+rn int dados(){
   
 int dado1, dado2;
   
@@ -20,6 +20,5 @@ printf("La suma de los dados es %d\n", dadototal);
 
 
 
-
-  
+return dadototal;  
 }
