@@ -2,10 +2,20 @@ int dados(){
   
 int dado1, dado2;
   
-printf("Jugador %c es tu turno:");
+printf("Jugador %c es tu turno:\n");
 
 srand(time(NULL))
+
 dado1=rand() % 6+1
+printf("Has sacado un %d\n", dado1);
+
+dado2=rand() % 6+1
+printf("Has sacado un %d\n", dado2);
+
+int dadototal=dado1+dado2;
+
+printf("La suma de los dados es %d\n", dadototal);
+
 
 
 
