@@ -1,8 +1,11 @@
-int dados(){
-  
+int dados(int num_casilla){
+
+
 int dado1, dado2;
- 
+
 printf("Jugador %c es tu turno:\n");
+
+
 
 srand(time(NULL))
 
@@ -17,8 +20,6 @@ printf("Has sacado un %d\n", dado2);
 if(casilla>=60){
 dado2=0
 }
-
-
 
 
 
