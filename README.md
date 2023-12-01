@@ -46,11 +46,12 @@ Estados:
     Los estados duran más que una llamada:
     Puente: dado1, dado2=0 durante 1 turno
 
-    Pozo: dado1, dado2=0 hasta que el otro J caiga en esa casilla, entonces el J que caiga recibirá el estado Pozo
+    Pozo: dado1, dado2=0 durante 3 turnos
 
-    Carcel: dado1, dado2=0 hasta que el otro J caiga en esa casill
+    Carcel:dado1, dado2=0 durante 5 turnos
 
     Casilla>60: dado2=0
+    
 
 Acciones: 
     Duran una sola llamada:
