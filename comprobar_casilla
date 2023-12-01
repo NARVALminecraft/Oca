@@ -8,7 +8,7 @@ switch(//char tipo casilla){
 
     }
     else{
-    
+     num_casilla=num_casilla+5
     }
     
 
