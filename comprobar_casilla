@@ -36,10 +36,23 @@ switch(//char tipo casilla){
 
       
     }
-
+    break;
   case 'p': //pozo
 
     //pierde turno hasta que otro jugador caiga
+    break;
+
+  case 'm'://muerte
+
+    num_casilla=0;
+    break;
+
+  case 'f':
+
+    printf("Ganas");
+    break:
+
+  default:
     break;
 
 
