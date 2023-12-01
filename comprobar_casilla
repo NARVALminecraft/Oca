@@ -1,6 +1,8 @@
 
 
-switch(//char tipo casilla){
+char tipo_casilla=buscar_tipo_casilla(num_casilla);
+
+switch(tipo_casilla){
 
   case 'o':
     printf("de oca a oca y tiro porque me toca");
@@ -53,8 +55,9 @@ switch(//char tipo casilla){
     break:
 
   default:
+    
     break;
-
+    
 
 
 
