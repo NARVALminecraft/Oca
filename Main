@@ -59,7 +59,7 @@ int main()
 {int casilla_inicial_jug1=0,casilla_inicial_jug2=0;
 int casilla_final_jug1,casilla_final_jug2;
 
-char tipo_casilla[64]={'n','n','n','n','n','o','b','n','n','o','n','n','n','n','o','n','n','n','o','h','n','n','n','o','n','n','d','o','n','n','n',};
+char tipo_casilla[64]={'n','n','n','n','n','o','b','n','n','o','n','n','n','n','o','n','n','n','o','h','n','n','n','o','n','n','d','o','n','n','n','p','o'};
 {
   while(casilla_final_jug1!=63&&casilla_final_jug2!=63)
   {casilla_final_jug1=jugador1(casilla_inicial_jug1);
