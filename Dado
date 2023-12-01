@@ -14,12 +14,13 @@ printf("Has sacado un %d\n", dado1);
 
 
 
-dado2=rand() % 6+1
-printf("Has sacado un %d\n", dado2);
 
 if(casilla>=60){
 dado2=0
 }
+else
+{dado2=rand() % 6+1}
+printf("Has sacado un %d\n", dado2);
 
 
 
