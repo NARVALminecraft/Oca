@@ -1,0 +1,9 @@
+char tipoCasilla;
+int posicion_array=0;
+while(posicion_array!=casilla)
+{if(casilla==posicion_array)
+  {tipo_casilla=tipo_casilla[posicion_array];}
+  posicion_array++;
+}
+
+return tipoCasilla;
