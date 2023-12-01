@@ -24,6 +24,8 @@ printf("Turno para el jugador 1\n");
 valor_dado=dado(casilla_jug1);
 casilla_anterior=casilla_jug1;
 casilla_jug1=casilla_anterior+valor_dado;
+casilla_anterior=casilla_jug1;
+casilla_jug1=comprobar_casilla(casilla_anterior);
 return casilla_jug1;
 }
 
@@ -37,6 +39,8 @@ printf("Turno para el jugador 2\n");
 valor_dado=dado(casilla_jug2);
 casilla_anterior=casilla_jug2;
 casilla_jug2=casilla_anterior+valor_dado;
+casilla_anterior=casilla_jug2;
+casilla_jug2=comprobar_casilla(casilla_anterior);
 return casilla_jug2;
 
 
