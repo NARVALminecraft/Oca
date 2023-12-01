@@ -1,0 +1,16 @@
+
+
+type def struct
+{int partidas_ganadas;
+int partidas perdidas;
+}Tjugador;
+
+Tjugador jugador1,jugador2;
+
+
+
+//si casilla_jug2==63  jugador2.partidas_ganadas++, jugador1.partidas_perdidas++
+//si casilla_jug1==63 jugador1.partidas_ganadas++, jugador2.partidas_perdidas++
+
+
+
