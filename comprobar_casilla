@@ -1,4 +1,4 @@
-
+int comprobar_casilla(num_casilla){
 
 char tipo_casilla=buscar_tipo_casilla(num_casilla);
 
@@ -60,5 +60,5 @@ switch(tipo_casilla){
     
 
 
-
- 
+  return num_casilla;
+ }
