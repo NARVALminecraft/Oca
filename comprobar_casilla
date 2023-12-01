@@ -3,14 +3,15 @@
 switch(//char tipo casilla){
 
   case 'o':
+    printf("de oca a oca y tiro porque me toca");
     if(num_casilla=5||num_casilla=14||num_casilla=23||num_casilla=32||num_casilla=41||num_casilla=45||num_casilla=54){
       num_casilla=num_casilla+4
-        printf("de oca a oca y tiro porque me toca")
+        
     }
     else{
      num_casilla=num_casilla+5
     }
-    
+    break;
 
   
   case 'b': //puente
@@ -26,10 +27,12 @@ switch(//char tipo casilla){
     
     if(num_casilla=26){
       num_casilla=53;
+      num_casilla=num_casilla+dado(num_casilla);
     }
     else{
       num_casilla=26;
-        
+     num_casilla=num_casilla+dado(num_casilla);
+
       
     }
 
