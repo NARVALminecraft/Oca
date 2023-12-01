@@ -12,7 +12,16 @@ switch(//char tipo casilla){
     }
     
 
-  case 'b':
-    {casilla=19; }
+  
+  case 'b': //puente
+    
+      num_casilla=19 //casilla posada;
+      break;
+   
+
+  case 'h': //posada
+    //pierde 1 turno
+
+  case 'd': //dados
 
  
