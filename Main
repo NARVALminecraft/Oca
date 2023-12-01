@@ -19,6 +19,7 @@ int jugador1(casilla_jug1)
 {int valor_dado=0,casilla_anterior,casilla_intermedia;
 char estado;
 bool perdida_turno;
+int turnos_perdidos;
 
 printf("Turno para el jugador 1\n");
 valor_dado=dado(casilla_jug1);
@@ -36,6 +37,7 @@ int jugador2(casilla_jug2)
 {int valor_dado=0,casilla_anterior,casilla_intermedia;
 char estado;
 bool perdida_turno;
+int turnos_perdidos;
 
 printf("Turno para el jugador 2\n");
 valor_dado=dado(casilla_jug2);
