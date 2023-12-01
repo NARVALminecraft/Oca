@@ -44,7 +44,7 @@ Reglamento:
 Estados:
 
     Los estados duran más que una llamada:
-    Posada/Puente: dado1, dado2=0 durante 1 turno
+    Puente: dado1, dado2=0 durante 1 turno
 
     Pozo: dado1, dado2=0 hasta que el otro J caiga en esa casilla, entonces el J que caiga recibirá el estado Pozo
 
