@@ -25,7 +25,7 @@ switch(tipo_casilla){
    
 
   case 'h': //posada
-    bool pierde_turno=true;
+    //pierde turno
 
   case 'd': //dados
     
@@ -41,9 +41,18 @@ switch(tipo_casilla){
     }
     break;
   case 'p': //pozo
-   bool pierde_turno=true;
-    //pierde turno hasta que otro jugador caiga
+   
+    //pierde 3 turnos 
     break;
+
+  case 'l':
+    num_casilla=30;
+    break;
+
+  case 'c':
+    //pierde 5 turnos;
+    break;
+
 
   case 'm'://muerte
 
