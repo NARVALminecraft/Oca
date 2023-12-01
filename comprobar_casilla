@@ -9,6 +9,7 @@ switch(tipo_casilla){
     if(num_casilla=5||num_casilla=14||num_casilla=23||num_casilla=32||num_casilla=41||num_casilla=45||num_casilla=54){
       num_casilla=num_casilla+4;
       num_casilla=num_casilla+dado(num_casilla);  
+
     }
     else{
      num_casilla=num_casilla+5;
@@ -24,7 +25,7 @@ switch(tipo_casilla){
    
 
   case 'h': //posada
-    //pierde 1 turno
+    bool pierde_turno=true;
 
   case 'd': //dados
     
@@ -35,12 +36,12 @@ switch(tipo_casilla){
     else{
       num_casilla=26;
      num_casilla=num_casilla+dado(num_casilla);
-
+      
       
     }
     break;
   case 'p': //pozo
-
+   bool pierde_turno=true;
     //pierde turno hasta que otro jugador caiga
     break;
 
@@ -52,7 +53,7 @@ switch(tipo_casilla){
   case 'f':
 
     printf("Ganas");
-    break:
+    break;
 
   default:
     
