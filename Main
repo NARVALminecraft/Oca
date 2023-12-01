@@ -58,13 +58,37 @@ int comprobar_casilla(int casilla);
 int main()
 {int casilla_inicial_jug1=0,casilla_inicial_jug2=0;
 int casilla_final_jug1,casilla_final_jug2;
+int turnos_perdidos=0;
 
 char tipo_casilla[64]={'n','n','n','n','n','o','b','n','n','o','n','n','n','n','o','n','n','n','o','h','n','n','n','o','n','n','d','o','n','n','n','p','o','n','n','n','o','n','n','n','n','o','l','n','n','o','n','n','n','n','o','n','c','d','o','n','n','n','m','o','n','n','n','f'};
 {
   while(casilla_final_jug1!=63&&casilla_final_jug2!=63)
-  {casilla_final_jug1=jugador1(casilla_inicial_jug1);
+
+  {
+
+  while()
+  casilla_final_jug1=jugador1(casilla_inicial_jug1);
+
   casilla_inicial_jug1=casilla_final_jug1;
-  casilla_final_jug2=jugador2(casilla_inicial_jug2);
+  if(casilla_inicial_jug1==19){
+  
+  turnos_perdidos=1
+  }
+  if(casilla_inicial_jug1!=19||casilla_inicial_jug1!=31||casilla_inicial_jug1!=52){
+  
+  turnos_perdidos=0;
+  }
+  if(casilla_inicial_jug1==31){
+  
+  turnos_perdidos=3;
+  }
+  if(casilla_inicial_jug1==52){
+  
+  turnos_perdidos=5;
+  }
+
+  casilla_final_jug2=jugador2(casilla_inicial_jug2)
+  
   casilla_inicial_jug2=casilla_final_jug2;
   }
 
