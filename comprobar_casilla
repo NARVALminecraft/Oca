@@ -37,6 +37,11 @@ switch(//char tipo casilla){
       
     }
 
+  case 'p': //pozo
+
+    //pierde turno hasta que otro jugador caiga
+    break;
+
 
 
 
