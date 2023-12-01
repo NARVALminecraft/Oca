@@ -25,7 +25,9 @@ switch(tipo_casilla){
    
 
   case 'h': //posada
-    num_casilla=num_casilla//pierde turno
+    while(turnos_perdidos<=5){
+      num_casilla=num_casilla//pierde turno;
+    }
 
   case 'd': //dados
     
@@ -42,7 +44,10 @@ switch(tipo_casilla){
     break;
   case 'p': //pozo
    
-    num_casilla=num_casilla//pierde 3 turnos 
+   while(turnos_perdidos<=5){
+      num_casilla=num_casilla//pierde 5 turnos;
+    }
+
     break;
 
   case 'l'://laberinto
@@ -50,7 +55,9 @@ switch(tipo_casilla){
     break;
 
   case 'c'://carcel
-    num_casilla=num_casilla//pierde 5 turnos;
+    while(turnos_perdidos<=5){
+      num_casilla=num_casilla//pierde 5 turnos;
+    }
     break;
 
 
