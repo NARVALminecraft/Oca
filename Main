@@ -9,7 +9,33 @@
 //modulo jugador 2
 //modulo comprobarcasilla
 
-int dados(int casilla);
+int dados(int casilla)
+{
+  int dado1, dado2,dadototal;
+
+  srand(time(NULL))
+
+  dado1=(rand() % 6)+1
+  printf("En el dado 1 has sacado un %d\n", dado1);
+
+    if(casilla>=60)
+    {dado2=0;}
+    else
+    {dado2=(rand() % 6)+1}
+
+  printf("En el dado dos has sacado un %d\n", dado2);
+  dadototal=dado1+dado2;
+
+printf("La suma de los dados es %d\n", dadototal);
+
+
+return dadototal;  
+}
+
+
+
+
+
 
 
 /*turno del jugador 1,realiza tirada, se calcula el valor nuevo de la casilla y se comprueba el tipo de casilla, en caso de 
