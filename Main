@@ -8,6 +8,7 @@
 //modulo jugador 1
 //modulo jugador 2
 //modulo comprobarcasilla
+//modulo buscar_tipo_casilla
 
 int dados(int casilla)
 {
