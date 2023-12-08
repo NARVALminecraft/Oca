@@ -44,8 +44,7 @@ casillas especiales se volvera a calcular el nuevo valor de la casilla*/
 
 int jugador1(casilla_jug1)
 {int valor_dado=0,casilla_anterior,casilla_intermedia;
-char estado;
-bool perdida_turno;
+
 int turnos_perdidos;
 
 printf("Turno para el jugador 1\n");
@@ -54,7 +53,7 @@ casilla_anterior=casilla_jug1;
 casilla_jug1=casilla_anterior+valor_dado;
 casilla_anterior=casilla_jug1;
 casilla_intermedia=comprobar_casilla(casilla_anterior);
-casilla_jug2=comprobar_casilla(casilla_intermedia);
+casilla_jug1=comprobar_casilla(casilla_intermedia);
 
 return casilla_jug1;
 }
