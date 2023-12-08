@@ -1,25 +1,17 @@
-int dados(int num_casilla){
-
-
+int dados(int num_casilla)
+{
 int dado1, dado2;
-
-printf("Jugador %c es tu turno:\n");
-
-
 
 srand(time(NULL))
 
-dado1=rand() % 6+1
+dado1=(rand() % 6)+1
 printf("Has sacado un %d\n", dado1);
 
-
-
-
 if(casilla>=60){
-dado2=0
+dado2=0;
 }
 else
-{dado2=rand() % 6+1}
+{dado2=(rand() % 6)+1}
 printf("Has sacado un %d\n", dado2);
 
 
