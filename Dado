@@ -1,6 +1,6 @@
 int dados(int num_casilla)
 {
-int dado1, dado2;
+int dado1, dado2,dadototal;
 
 srand(time(NULL))
 
@@ -14,9 +14,7 @@ else
 {dado2=(rand() % 6)+1}
 printf("Has sacado un %d\n", dado2);
 
-
-
-int dadototal=dado1+dado2;
+dadototal=dado1+dado2;
 
 printf("La suma de los dados es %d\n", dadototal);
 
