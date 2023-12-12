@@ -1,16 +1,26 @@
 
-
-type def struct
-{int partidas_ganadas;
-int partidas perdidas;
-}Tjugador;
-
-Tjugador jugador1,jugador2;
+typedef char TNombrej1[5];
+typedef char TApellidoj1[10];
 
 
+typedef struct{
+TNombrej1 nombrej1;
+TApellidoj1 apellidoj1;
 
-//si casilla_jug2==63  jugador2.partidas_ganadas++, jugador1.partidas_perdidas++
-//si casilla_jug1==63 jugador1.partidas_ganadas++, jugador2.partidas_perdidas++
+}TJugadorj1;
+
+TJugadorj1 jugador1;
+
+printf("Introduzca su nombre (máximo 5 caracteres): ");
+scanf("%s", jugador1.nombrej1);
+
+
+printf("Introduzca su primer apellido (máximo 10 caracteres): ");
+scanf("%s", jugador1.apellidoj1);
+
+printf("Su nombre es %s y su apellido %s", jugador1.nombrej1, jugador1.apellidoj1)
+
+
 
 
 
