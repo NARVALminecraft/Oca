@@ -16,7 +16,7 @@ int dados(int casilla)
 {char tirar;
   int dado1, dado2,dadototal;
 
-printf("Haz clic en la tecla para lanzar el dado:");
+printf("Haz clic en la tecla intro para lanzar el dado:");
 scanf("%c", &tirar);
 
 if(tirar=='\n')
