@@ -19,7 +19,7 @@ int dados(int casilla)
 printf("Haz clic en la tecla para lanzar el dado:");
 scanf("%c", &tirar);
 
-if(tirar==\n)
+if(tirar=='\n')
 { dado1=(rand() % 6)+1;
   printf("En el dado 1 has sacado un %d\n", dado1);
 
