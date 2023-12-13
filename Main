@@ -35,7 +35,7 @@ printf("La suma de los dados es %d\n", dadototal);
 }
 
 
-return dadototal;  
+return dadototal;
 }
 
 char buscar_tipo_casilla(int casilla)
@@ -62,26 +62,26 @@ switch(tipo_casilla){
     printf("de oca a oca y tiro porque me toca\n");
     if(num_casilla==5||num_casilla==14||num_casilla==23||num_casilla==32||num_casilla==41||num_casilla==45||num_casilla==54){
       num_casilla=num_casilla+4;
-      num_casilla=num_casilla+dados(num_casilla);  
+      num_casilla=num_casilla+dados(num_casilla);
 
     }
     else{
      num_casilla=num_casilla+5;
      num_casilla=num_casilla+dados(num_casilla);
-    } 
+    }
     break;
 
-  
+
   case 'b': //puente
     	printf("Has caido en el puente e iras a la casilla de la posada\n");
       num_casilla=19; //casilla posada;
       break;
-   
+
 
   case 'h': //posada
     printf("Has caido en la casilla de la posada, estaras 1 turno sin tirar\n");
       num_casilla=num_casilla;//pierde turno;
-    
+
 
   case 'd': //dados
     printf("Has caido en la casilla de dados, te desplazarás hasta la otra casilla de dados y volverás a tirar\n");
@@ -92,17 +92,17 @@ switch(tipo_casilla){
     else{
       num_casilla=26;
      num_casilla=num_casilla+dados(num_casilla);
-      
-      
+
+
     }
     break;
   case 'p': //pozo
-   
+
    printf("Has caido en el pozo, estarás 3 turnos sin tirar\n");
-      
+
       for(i=0;i<3;i++)
       {num_casilla=num_casilla;}//pierde 3 turnos;
-    
+
 
   break;
 
@@ -112,13 +112,11 @@ switch(tipo_casilla){
     break;
 
   case 'c'://carcel
-    
+
     printf("Has caido en el pozo, estarás 5 turnos sin tirar\n");
        for(i=0;i<5;i++)
       {num_casilla=num_casilla;}//pierde 5 turnos;
-    
-    
-    break;
+        break;
 
 
   case 'm'://muerte
@@ -128,11 +126,11 @@ printf("Has caido en la muerte, vuelve a la casilla inicial\n");
 
   case 'f':
 printf("Has ganado, enhorabuena\n");
-   
+
     break;
 
   default:
-    
+
     break;
 }
 
@@ -143,12 +141,12 @@ return num_casilla;}
 
 
 
-/*turno del jugador 1,realiza tirada, se calcula el valor nuevo de la casilla y se comprueba el tipo de casilla, en caso de 
+/*turno del jugador 1,realiza tirada, se calcula el valor nuevo de la casilla y se comprueba el tipo de casilla, en caso de
 casillas especiales se volvera a calcular el nuevo valor de la casilla*/
 
 int jugador1(int casilla_jug1)
 {int valor_dado=0,casilla_anterior,casilla_intermedia;
-int i=0;
+int i=0,exceso_casilla=0;
 
 int turnos_perdidos;
 
@@ -163,8 +161,10 @@ casilla_jug1=casilla_anterior+valor_dado;
 casilla_anterior=casilla_jug1;
 casilla_intermedia=comprobar_casilla(casilla_anterior);
 casilla_jug1=comprobar_casilla(casilla_intermedia);
-if(casilla_jug1>63)
-{casilla_jug1-=valor_dado;}
+
+if(casilla_jug1>63) //si al tirar el dado nos pasamos la casilla final, debemos volver hacia atras tantas posiciones como nos pasemos de la casilla final.
+{exceso_casilla=casilla_jug1-63;
+    casilla_jug1=63-exceso_casilla;}
 
 return casilla_jug1;
 }
@@ -172,7 +172,7 @@ return casilla_jug1;
 
 int jugador2(int casilla_jug2)
 {int valor_dado=0,casilla_anterior,casilla_intermedia;
-int i;
+int i,exceso_casilla;
 for(i=0;i<4;i++)
 {printf("\n");}
 
@@ -183,8 +183,12 @@ casilla_jug2=casilla_anterior+valor_dado;
 casilla_anterior=casilla_jug2;
 casilla_intermedia=comprobar_casilla(casilla_anterior);
 casilla_jug2=comprobar_casilla(casilla_intermedia);
-if(casilla_jug2>63)
-{casilla_jug2-=valor_dado;}
+
+if(casilla_jug2>63)     //si al tirar el dado nos pasamos la casilla final, debemos volver hacia atras tantas posiciones como nos pasemos de la casilla final.
+{exceso_casilla=casilla_jug2-63;
+    casilla_jug2=63-exceso_casilla;
+
+}
 
 return casilla_jug2;
 }
@@ -199,42 +203,56 @@ int casilla_final_jug1,casilla_final_jug2;
 int turnos_perdidos=0;
 
 
-srand(time(NULL)); 
+srand(time(NULL));
 
-  while(casilla_final_jug1<64&&casilla_final_jug1!=63&&casilla_final_jug2<64&&casilla_final_jug2!=63)
-	{ 
+  while(casilla_final_jug1!=63&&casilla_final_jug2!=63)
+	{
 
  /* while()
   casilla_final_jug1=jugador1(casilla_inicial_jug1);
 
   casilla_inicial_jug1=casilla_final_jug1;
   if(casilla_inicial_jug1==19){
-  
+
   turnos_perdidos=1
   }
   if(casilla_inicial_jug1!=19||casilla_inicial_jug1!=31||casilla_inicial_jug1!=52){
-  
+
   turnos_perdidos=0;
   }
   if(casilla_inicial_jug1==31){
-  
+
   turnos_perdidos=3;
   }
   if(casilla_inicial_jug1==52){
-  
+
   turnos_perdidos=5;
   }
   if(turnos_perdidos!=0){
-  
+
   turnos_perdidos=turnos_perdidos-1
   }*/
   casilla_final_jug1=jugador1(casilla_inicial_jug1);
   casilla_inicial_jug1=casilla_final_jug1;//guardamos el valor de la casilla actual del jugador 1 para poder cambiarlo en la siguiente tirada
   printf("El jugador 1 se encuentra en la casilla %d\n",casilla_final_jug1);
+  if(casilla_final_jug1==casilla_inicial_jug1)
+
+
   casilla_final_jug2=jugador2(casilla_inicial_jug2);
   printf("El jugador 2 se encuentra en la casilla %d\n",casilla_final_jug2);
   casilla_inicial_jug2=casilla_final_jug2;//guardamos el valor de la casilla actual del jugador 2 para poder cambiarlo en la siguiente tirada
+
   }
+
+
+if(casilla_final_jug1==63)
+  {printf("Enhorabuena jugador 1, has ganado");
+printf("Lo siento jugador 2, has perdido");
+}
+else
+{printf("Enhorabuena jugador 2, has ganado");
+printf("Lo siento jugador 1, has perdido");}
+
 
 
 return 0;}
