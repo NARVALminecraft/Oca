@@ -163,6 +163,8 @@ casilla_jug1=casilla_anterior+valor_dado;
 casilla_anterior=casilla_jug1;
 casilla_intermedia=comprobar_casilla(casilla_anterior);
 casilla_jug1=comprobar_casilla(casilla_intermedia);
+if(casilla_jug1>63)
+{casilla_jug1-=valor_dado;}
 
 return casilla_jug1;
 }
@@ -179,8 +181,11 @@ valor_dado=dados(casilla_jug2);
 casilla_anterior=casilla_jug2;
 casilla_jug2=casilla_anterior+valor_dado;
 casilla_anterior=casilla_jug2;
-/*casilla_intermedia=comprobar_casilla(casilla_anterior);
-casilla_jug2=comprobar_casilla(casilla_intermedia);*/
+casilla_intermedia=comprobar_casilla(casilla_anterior);
+casilla_jug2=comprobar_casilla(casilla_intermedia);
+if(casilla_jug2>63)
+{casilla_jug2-=valor_dado;}
+
 return casilla_jug2;
 }
 
