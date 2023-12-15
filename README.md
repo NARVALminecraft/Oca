@@ -1,5 +1,5 @@
 # Oca
-Oca programacion
+No son necesarias librerias especiales ni normas especiales para ejecutar o compilar, al principio te preguntaran el nombre y un solo apellido a ambos jugadores y el turno se pasa
 
 Array de 64 casillas, sus casillas especiales son:
 
