@@ -1,7 +1,7 @@
 # Oca
 No son necesarias librerias especiales ni normas especiales para ejecutar o compilar, al principio te preguntaran el nombre y un solo apellido a ambos jugadores y el turno se pasa con la tecla enter
 
-Array de 64 casillas, sus casillas especiales son:
+Se compone de un array de 64 casillas, sus casillas especiales son:
 
     Casilla 5 - Oca
     Casilla 6 - Puente
@@ -41,7 +41,7 @@ Reglamento:
     Entrar al Jardín de la Oca: Es necesario sacar los puntos justos para entrar, en caso de exceso se retroceden tantas casillas como puntos sobrantes.
 
 
-Estados:
+Estados (se mantienen condicionalmente):
 
     Los estados duran más que una llamada:
     Puente: dado1, dado2=0 durante 1 turno
