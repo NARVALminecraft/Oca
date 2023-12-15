@@ -55,6 +55,7 @@ Estados (se mantienen condicionalmente):
 
 Acciones: 
     Duran una sola llamada:
+    
     Oca: Se mueve a la siguiente oca y vuelve a tirar
 
     Puente: se mueve a la casilla Posada
