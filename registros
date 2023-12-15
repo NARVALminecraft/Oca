@@ -7,8 +7,6 @@ int main(){
 
 registros();
 
-
-
 return 0;
 }
 void registros(){
