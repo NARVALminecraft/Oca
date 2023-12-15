@@ -1,44 +1,47 @@
-typedef char TNombrej1[5];
-typedef char TApellidoj1[10];
-
-typedef struct{
-
-TNombrej1 nombrej1;
-TApellidoj1 apellidoj1;
-
-}TJugadorj1;
-
-TJugadorj1 namejugador1;
-
-printf("Jugador 1, introduzca su nombre (máximo 5 caracteres): ");
-scanf("%s", namejugador1.nombrej1);
-
-printf("%s, introduzca su primer apellido (máximo 10 caracteres): ", namejugador1.nombrej1);
-scanf("%s", namejugador1.apellidoj1);
-
-printf("Jugador 1, su nombre es %s y su apellido %s\n",namejugador1.nombrej1, namejugador1.apellidoj1);
 
 
-typedef char TNombrej2[5];
-typedef char TApellidoj2[10];
+int registro(){
+  typedef char TNombrej1[5];
+  typedef char TApellidoj1[10];
+  
+  typedef struct{
+  
+  TNombrej1 nombrej1;
+  TApellidoj1 apellidoj1;
+  
+  }TJugadorj1;
+  
+  TJugadorj1 namejugador1;
+  
+  printf("Jugador 1, introduzca su nombre (máximo 5 caracteres): ");
+  scanf("%s", namejugador1.nombrej1);
+  
+  printf("%s, introduzca su primer apellido (máximo 10 caracteres): ", namejugador1.nombrej1);
+  scanf("%s", namejugador1.apellidoj1);
+  
+  printf("Jugador 1, su nombre es %s y su apellido %s\n",namejugador1.nombrej1, namejugador1.apellidoj1);
+  
+  
+  typedef char TNombrej2[5];
+  typedef char TApellidoj2[10];
+  
+  typedef struct{
+  
+  TNombrej2 nombrej2;
+  TApellidoj2 apellidoj2;
+  
+  }TJugadorj2;
+  
+  TJugadorj2 namejugador2;
+  
+  printf("Jugador 2, introduzca su nombre (máximo 5 caracteres): ");
+  scanf("%s", namejugador2.nombrej2);
+  
+  printf("%s, introduzca su primer apellido (máximo 10 caracteres): ", namejugador2.nombrej2);
+  scanf("%s", namejugador2.apellidoj2);
+  
+  printf("Jugador 2, su nombre es %s y su apellido %s\n", namejugador2.nombrej2, namejugador2.apellidoj2);
 
-typedef struct{
-
-TNombrej2 nombrej2;
-TApellidoj2 apellidoj2;
-
-}TJugadorj2;
-
-TJugadorj2 namejugador2;
-
-printf("Jugador 2, introduzca su nombre (máximo 5 caracteres): ");
-scanf("%s", namejugador2.nombrej2);
-
-printf("%s, introduzca su primer apellido (máximo 10 caracteres): ", namejugador2.nombrej2);
-scanf("%s", namejugador2.apellidoj2);
-
-printf("Jugador 2, su nombre es %s y su apellido %s\n", namejugador2.nombrej2, namejugador2.apellidoj2);
-
-
-
+return 0;
+}
 
