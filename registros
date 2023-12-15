@@ -1,8 +1,20 @@
+#include<stdio.h>
+
+void registros();
 
 
-int registro(){
-  typedef char TNombrej1[5];
-  typedef char TApellidoj1[10];
+int main(){
+
+registros();
+
+
+
+return 0;
+}
+void registros(){
+
+  typedef char TNombrej1[20];
+  typedef char TApellidoj1[20];
   
   typedef struct{
   
@@ -22,8 +34,8 @@ int registro(){
   printf("Jugador 1, su nombre es %s y su apellido %s\n",namejugador1.nombrej1, namejugador1.apellidoj1);
   
   
-  typedef char TNombrej2[5];
-  typedef char TApellidoj2[10];
+  typedef char TNombrej2[20];
+  typedef char TApellidoj2[20];
   
   typedef struct{
   
@@ -34,14 +46,17 @@ int registro(){
   
   TJugadorj2 namejugador2;
   
-  printf("Jugador 2, introduzca su nombre (máximo 5 caracteres): ");
+  printf("Jugador 2, introduzca su nombre (máximo 20 caracteres): ");
   scanf("%s", namejugador2.nombrej2);
   
-  printf("%s, introduzca su primer apellido (máximo 10 caracteres): ", namejugador2.nombrej2);
+  printf("%s, introduzca su primer apellido (máximo 20 caracteres): ", namejugador2.nombrej2);
   scanf("%s", namejugador2.apellidoj2);
   
   printf("Jugador 2, su nombre es %s y su apellido %s\n", namejugador2.nombrej2, namejugador2.apellidoj2);
 
-return 0;
-}
+char *TJugador1 = TJugadorj1;
+char *TJugador2 = TJugadorj2;
 
+
+
+}
